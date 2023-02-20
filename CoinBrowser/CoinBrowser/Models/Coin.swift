@@ -19,7 +19,7 @@ class Coin {
     }
     
     init?(dictionary: [String : Any]) {
-        guard let id = dictionary[Keys.name.rawValue] as? String,
+        guard let id = dictionary[Keys.id.rawValue] as? String,
               let symbol = dictionary[Keys.symbol.rawValue] as? String,
               let name = dictionary[Keys.name.rawValue] as? String else { return nil }
         
